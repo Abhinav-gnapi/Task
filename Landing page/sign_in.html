@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="icon" type="image/icon" href="./icon.webp">
+    <style>
+        .outer {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+        }
+        .outer-box{
+            border: 1px solid rgb(187, 182, 182);
+            border-radius: 4px;
+            padding: 20px;
+            background-color: rgb(242, 245, 245);
+            
+        }
+        form {
+            position: relative;
+
+        }
+        form label {
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        form input{
+            width: 200px;
+            background-color: black;
+            border: 1px solid rgb(109, 105, 105);
+            border-radius: 2px;
+            color: white;
+        }
+        .outer-box {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            background-color: black;
+        }
+        #forgot_link {
+            font-size: 13px;
+            position: absolute;
+            left: 111px;
+            text-decoration: none;
+            color: rgb(192, 82, 82);
+        }
+        #submit {
+            width: 208px;
+            margin-top: 20px;
+            background-color: rgb(238, 39, 39);
+            border: none;
+            border-radius: 3px;
+            color: white;
+            padding: 4px;
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 29px;
+            color: red;
+        }
+        #submit:hover{
+            transform: scale(102%);
+        }
+        body {
+            background-image: url(./netflix_bg.jpg);
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            /* align-items: center; */
+        }
+        .outer img {
+            position: absolute;
+            left: 40px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+            <!-- <img src="./icon.webp" alt="git logo" height="80px"> -->
+             <img src="./netflix-logo.png" height="23px">
+            <div class="outer-box">
+                <form>
+                    <h1>Sign In</h1>
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username" name="username" placeholder="Enter the username" autofocus required>
+                    <br>
+                    <br>
+                    <label for="pass">Password</label>
+                    <a href="./forgot.html" id="forgot_link">Forgot password?</a><br>
+                    <input type="password" id="pass" name="password" placeholder="Enter the password" required>
+                    <a href="./page.html"><input type="submit" id="submit"></a>
+                </form>
+            </div>
+    </div>
+</body>
+</html>

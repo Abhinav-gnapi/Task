@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" type="image/icon" href="./icon.webp">
+    <style>
+        header {
+            background-image: url(./netflix_bg.jpg);
+            box-shadow: 0px 0px 300px 80px black inset;
+            height: 400px;
+            opacity: 85%;
+            background-size: cover;
+            position: relative;
+            border-bottom: 5px solid rgb(24, 22, 22);
+
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1, h3, p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .first_h1 {
+            margin-top: 120px;
+            margin-bottom: -20px;
+        }
+        .header_p1 {
+            margin-top: -9px;
+            /* margin-bottom: -30px; */
+            font-size: 18px;
+        }
+        .header_p2 {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .form {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+
+        }
+        .form input {
+            width: 300px;
+            height: 35px;
+        }
+        .form button {
+            background-color: red;
+            color: white;
+            height: 40px;
+            width: 180px;
+            border: none;
+        }
+        .header input[type="button"]{
+            background-color: red;
+            color: white;
+            padding: 4px 8px;
+            border: none;
+            border-radius: 3px;
+            font-size: 12px;
+            position: absolute;
+            right: 40px;
+            top: 20px;
+        }
+        section{
+            background-color: black;
+            height: 350px;
+            border-bottom: 5px solid rgb(48, 45, 45);
+        }
+        .section1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .section1 div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .header div img {
+            position: absolute;
+            left: 40px;
+            top: 20px;
+        }
+        .section2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .section2 div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .section3 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .section3 div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        footer {
+            background-color: black;
+            height: 250px;
+            /* border-bottom: 5px solid rgb(48, 45, 45); */
+            color: white;
+            font-size: 11px;
+        }
+        footer .links {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="./netflix-logo.png" height="23px">
+            <a href="./sign_in.html"><input type="button" id="submit" value="Sign In"></a>
+        </div>
+        
+        <div class="text">
+            <h1 class="first_h1">Unlimited movies, TV</h1>
+            <h1  class="second_h1">shows, and more.</h1>
+            <p class="header_p1">Watch anywhere. Cancel anytime.</p>
+            <p class="header_p2">Ready to watch? Enter your email to create or restart your memebership.</p>
+        </div>
+        <div class="form">
+            <form>
+                <input type="text" id="email" name="email" placeholder=" Email address">
+                <button type="submit" id="submit">GET STARTED</button>
+            </form>
+        </div>
+    </header>
+    <section class="section1">
+        <div>
+            <h1>Enjoy on your  TV.</h1>
+            <p>Watch on Smart  TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <img src="./netflix_preview.jpg" height="200px">
+    </section>
+    <section class="section2">
+        <img src="./download.webp" height="200px">
+        <div>
+            <h1>Download your shows to watch offline.</h1>
+            <p>Save your favorite easily and always have something to watch.</p>
+        </div>
+    </section>
+    <section class="section3">
+        <div>
+            <h1>Watch everywhere.</h1>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+        </div>
+        <img src="./Android_Collage_1920x1080_EMEA_DACH_DE.jpg" height="200px">
+    </section>
+    <footer>
+        <p style="font-size: 13px; margin-left: 50px; margin-top: 0; padding-top: 20px;"><span>Questions? Call  1-844-542-4813</span></p>
+        <div class="links">
+            <p><span>FAQ</span></p>
+            <p><span>Investor Relations</span></p>
+            <p><span>Ways to watch</span></p>
+            <p><span>Corporate information</span></p>
+            <p><span>Help center</span></p>
+            <p><span>Jobs</span></p>
+            <p><span>Terms of Use</span></p>
+            <p><span>Contact Us</span></p>
+            <p><span>Account</span></p>
+            <p><span>Redeem Gift Cards</span></p>
+            <p><span>Privacy</span></p>
+            <p><span>Speed Test</span></p>
+            <p><span>Media Center</span></p>
+            <p><span>Buy Gift Cards</span></p>
+            <p><span>Cookie Preferences</span></p>
+            <p><span>Legal Notices</span></p>
+            <p><span>Netflix Originals</span></p>
+        </div>
+    </footer>
+</body>
+</html>
