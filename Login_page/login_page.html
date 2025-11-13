@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
-        body {
+        .title {
             display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
             justify-content: center;
-            /* align-items: center; */
-            align-content: center;
+            align-items: center;
+            /* align-content: center; */
+            margin-top: 10%;
         }
         .outer-box{
             border: 1px solid rgb(187, 182, 182);
@@ -54,34 +57,62 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 29px
         }
-        img {
+        /* img {
            margin-top: 10px;
            margin-left: 32%;
-        }
+        } */
         #submit:hover{
             transform: scale(102%);
         }
-        .outer {
-            margin-top: 10%;
+        img:hover {
+            transform: scale(120%);
+            transition: transform 3s ease;
         }
+        /* .outer {
+            margin-top: 10%;
+        } */
+         .outer {
+            position: relative;
+         }
+        /* .toggle {
+            position: absolute;
+            height: 25px;
+            width: 55px;
+            background-color: black;
+            border-radius: 4px;
+            top: -140px;
+            right: 80px;
+        }
+        #theme {
+            width:55px;
+            height: 25px;
+        } */
+        /* body:has(> input[type="checkbox"]:checked) {
+            background-color: black;
+        } */
     </style>
 </head>
 <body>
     <div class="outer">
-        <img src="./git image1.jpg" alt="git logo" height="80px">
-        <h1>Sign in to GitHub</h1>
-    <div class="outer-box">
-        <form>
-                <label for="username">Username</label><br>
-                <input type="text" id="username" name="username" placeholder="Enter the username" autofocus required>
-                <br>
-                <br>
-                <label for="pass">Password</label>
-                <a href="./forgot.html" id="forgot_link">Forgot password?</a><br>
-                <input type="password" id="pass" name="password" placeholder="Enter the password" required>
-                <input type="submit" id="submit">
-        </form>
-    </div>
+        <div class="title">
+            <img src="./git image1.jpg" alt="git logo" height="80px">
+            <h1>Sign in to GitHub</h1>
+            <div class="outer-box">
+                <form>
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username" name="username" placeholder="Enter the username" autofocus required>
+                    <br>
+                    <br>
+                    <label for="pass">Password</label>
+                    <a href="./forgot.html" id="forgot_link">Forgot password?</a><br>
+                    <input type="password" id="pass" name="password" placeholder="Enter the password" required>
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </div>
+        <!-- <div class="toggle">
+            <input type="checkbox" id="theme" name="theme">
+        </div> -->
     </div>
 </body>
 </html>

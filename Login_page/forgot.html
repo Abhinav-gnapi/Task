@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reset password</title>
     <style>
-        .outer {
+        .box {
             border: 1px solid rgb(187, 182, 182);
             border-radius: 4px;
             padding: 20px;
             background-color: rgb(242, 245, 245);
-            margin-top: 200px;
-            margin-left: 40%;
+            /* margin-left: 40%; */
             width: 260px;
             display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
         .outer label {
             font-size: small;
@@ -35,24 +37,34 @@
         }
         h1 {
             font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            margin-left: 40%;
+            /* position: absolute; */
             /* text-align: center; */
+            margin-left: -120px;
             
-
+            
+        }
+        .outer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15%;
+            position: relative;
+            /* width: 280px; */
         }
     </style>
 </head>
 <body>
-    <h1>Reset your password !</h1>
     <div class="outer">
-        <form>
-            <label for="cred">Email or Mobile number</label>
-            <br>
-            <input type="text" id="cred" name="cred" required>
-             <button type="submit" id="submit">Send</button>
-        </form>
+        <h1>Reset your password !</h1>
+        <div class="box">
+            <form>
+                <label for="cred">Email or Mobile number</label>
+                <br>
+                <input type="text" id="cred" name="cred" autofocus required>
+                <button type="submit" id="submit">Send</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
