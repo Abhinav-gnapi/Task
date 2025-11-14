@@ -59,6 +59,7 @@
             border-radius: 3px;
             color: white;
             padding: 4px;
+            cursor: pointer;
         }
         h1{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -86,16 +87,16 @@
     <div class="outer">
              <img src="./netflix-logo.png" height="23px">
             <div class="outer-box">
-                <form>
+                <form action="./page.html">
                     <h1>Sign In</h1>
                     <label for="username">Username</label><br>
-                    <input type="text" id="username" name="username" placeholder="Enter the username" autofocus required>
+                    <input type="text" id="username" name="username" placeholder="Enter the username" required autofocus>
                     <br>
                     <br>
                     <label for="pass">Password</label>
                     <a href="./forgot.html" id="forgot_link">Forgot password?</a><br>
                     <input type="password" id="pass" name="password" placeholder="Enter the password" required>
-                    <a href="./page.html"><input type="button" id="submit" value="Login"></a>
+                    <input type="submit" id="submit" value="Login">
                 </form>
             </div>
     </div>

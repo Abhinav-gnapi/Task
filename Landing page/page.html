@@ -9,12 +9,12 @@
         header {
             background-image: url(./netflix_bg.jpg);
             box-shadow: 0px 0px 300px 80px black inset;
-            height: 400px;
+            height: auto;
             opacity: 85%;
             background-size: cover;
             position: relative;
             border-bottom: 5px solid rgb(24, 22, 22);
-
+            padding: 40px;
         }
         .text {
             display: flex;
@@ -44,6 +44,8 @@
             /* flex-direction: column; */
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
+            flex-shrink: 2;
 
         }
         .form input {
@@ -56,6 +58,7 @@
             height: 40px;
             width: 180px;
             border: none;
+            cursor: pointer;
         }
         .header input[type="button"]{
             background-color: red;
@@ -70,13 +73,15 @@
         }
         section{
             background-color: black;
-            height: 350px;
+            height: auto;
             border-bottom: 5px solid rgb(48, 45, 45);
+            padding: 60px 20px;
         }
         .section1 {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            flex-wrap: wrap;
         }
         .section1 div {
             display: flex;
@@ -85,6 +90,7 @@
         }
         .header div img {
             position: absolute;
+            width: auto;
             left: 40px;
             top: 20px;
         }
@@ -92,6 +98,7 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            flex-wrap: wrap;
         }
         .section2 div {
             display: flex;
@@ -102,23 +109,32 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            flex-wrap: wrap;
         }
         .section3 div {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
         }
+        section > img {
+            overflow-x: hidden;
+        }
         footer {
             background-color: black;
-            height: 250px;
-            /* border-bottom: 5px solid rgb(48, 45, 45); */
-            color: white;
+            border-bottom: 5px solid black;
+            /* color: white; */
             font-size: 11px;
         }
         footer .links {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            margin-left: 50px;
+            padding: 0px 3%;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
         }
         body {
             margin: 0;
@@ -167,25 +183,25 @@
         <img src="./Android_Collage_1920x1080_EMEA_DACH_DE.jpg" height="200px">
     </section>
     <footer>
-        <p style="font-size: 13px; margin-left: 50px; margin-top: 0; padding-top: 20px;"><span>Questions? Call  1-844-542-4813</span></p>
+        <p style="font-size: 13px;padding-left: 3%; margin-top: 0; padding-top: 20px;"><span>Questions? Call <a href="tel:1-844-542-4813" style="color: white;">1-844-542-4813</a></span></p>
         <div class="links">
-            <p><span>FAQ</span></p>
-            <p><span>Investor Relations</span></p>
-            <p><span>Ways to watch</span></p>
-            <p><span>Corporate information</span></p>
-            <p><span>Help center</span></p>
-            <p><span>Jobs</span></p>
-            <p><span>Terms of Use</span></p>
-            <p><span>Contact Us</span></p>
-            <p><span>Account</span></p>
-            <p><span>Redeem Gift Cards</span></p>
-            <p><span>Privacy</span></p>
-            <p><span>Speed Test</span></p>
-            <p><span>Media Center</span></p>
-            <p><span>Buy Gift Cards</span></p>
-            <p><span>Cookie Preferences</span></p>
-            <p><span>Legal Notices</span></p>
-            <p><span>Netflix Originals</span></p>
+            <p><span><a href="" style="color: white;">FAQ</a></span></p>
+            <p><span><a href="" style="color: white;">Investor Relations</a></span></p>
+            <p><span><a href="" style="color: white;">Ways to watch</a></span></p>
+            <p><span><a href="" style="color: white;">Corporate information</a></span></p>
+            <p><span><a href="" style="color: white;">Help center</a></span></p>
+            <p><span><a href="" style="color: white;">Jobs</a></span></p>
+            <p><span><a href="" style="color: white;">Terms of Use</a></span></p>
+            <p><span><a href="" style="color: white;">Contact Us</a></span></p>
+            <p><span><a href="" style="color: white;">Account</a></span></p>
+            <p><span><a href="" style="color: white;">Redeem Gift Cards</a></span></p>
+            <p><span><a href="" style="color: white;">Privacy</a></span></p>
+            <p><span><a href="" style="color: white;">Speed Test</a></span></p>
+            <p><span><a href="" style="color: white;">Media Center</a></span></p>
+            <p><span><a href="" style="color: white;">Buy Gift Cards</a></span></p>
+            <p><span><a href="" style="color: white;">Cookie Preferences</a></span></p>
+            <p><span><a href="" style="color: white;">Legal Notices</a></span></p>
+            <p><span><a href="" style="color: white;">Netflix Originals</a></span></p>
         </div>
     </footer>
 </body>
